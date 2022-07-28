@@ -24,17 +24,14 @@ public class CircleProcessing extends PApplet {
 
     @Override
     public void draw() {
-        circle(x,HEIGHT*1/5);
-        circle(y,HEIGHT*2/5);
-        circle(z,HEIGHT*3/5);
-        circle(j, HEIGHT*4/5);
+        for(int i=1;i<=4;i++){
+            circle(x*i,HEIGHT*i/5);
+        }
         x+=1;
-        y+=2;
-        z+=3;
-        j+=4;
+
     }
 
-    private void circle(int inc, int pos) {
-        ellipse(inc, pos,10,10);
+    private void circle(int speed, int pos) {
+        ellipse(speed, pos,10,10);
     }
 }
