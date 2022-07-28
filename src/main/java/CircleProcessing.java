@@ -3,9 +3,6 @@ import processing.core.PApplet;
 public class CircleProcessing extends PApplet {
 
     public static int x = 0;
-    public static int y = 0;
-    public static int z = 0;
-    public static int j = 0;
 
     public static final int WIDTH = 700;
     public static final int HEIGHT = 700;
